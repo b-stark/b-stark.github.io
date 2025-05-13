@@ -1,0 +1,166 @@
+/* Adapted from codepen user Leonam Silva de Souza:
+ https://codepen.io/leonam-silva-de-souza/pen/vEYYxGP */
+
+:root {
+    --main: #FFFBDE;
+    --acc1: #90D1CA;
+    --acc2: #129990;
+    --acc3: #096B68;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14;
+    height: 100vh;
+    width: 100%;
+    font-weight: 500;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bd-grid {
+    display: flex;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+}
+
+.nav-img {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+}
+
+.nav-img img {
+    width: 46px;
+}
+
+.nav-name {
+    display: block;
+}
+
+.nav-item {
+    margin: 0 1.5rem;
+    padding: 1.4rem 0;
+}
+
+.nav-link {
+    color: var(--acc2);
+}
+
+.nav-link:hover {
+    color: var(--acc1);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-perfil {
+    flex-direction: row;
+    text-align: initial;
+    margin-bottom: 0;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-icon {
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    margin: 0;
+    top: 2.5rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    margin: 1rem 0;
+}
+
+.active {
+    color: var(--acc3);
+    text-decoration-line: underline;
+}
+
+#content {
+    padding: 16px;
+}
+
+section {
+    min-height: 500px;
+    border: 1px solid red;
+}
+
+h1,
+h2 {
+    padding-top: 3.5rem;
+}

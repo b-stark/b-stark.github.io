@@ -1,7 +1,82 @@
 <!DOCTYPE html>
-<html>
+<!-- Adapted from codepen user Leonam Silva de Souza:
+ https://codepen.io/leonam-silva-de-souza/pen/vEYYxGP -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Stark</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header class="header">
+        <nav class="nav" id="nav-menu">
+            <div class="nav-content bd-grid">
+                <a href="#about" class="nav-perfil">
+                    <div class="nav-img">
+                        <img src="headshot.jpg" alt="" height="">
+                    </div>
+                    <div>
+                        <span class="nav-name">Ben</span>
+                        <span class="nav-name">Stark</span>
+                    </div>
+                </a>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#about" class="nav-link active">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#portfolio" class="nav-link dropdown-link">Porfolio
+                                <i class="bx bx-chevron-down dropdown-icon"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="project1" class="nav-link">Project 1</a></li>
+                                <li class="dropdown-item"><a href="project2" class="nav-link">Project 2</a></li>
+                                <li class="dropdown-item"><a href="project3" class="nav-link">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#resume" class="nav-link ">Resume</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link ">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>"
+    <div id="content">
+        <section>
+            <h1 id="about">About</h1>
+            <img src="about/img1.jpg" alt="Man standing in forest hjolding binoculars and a book" height=500px>
+        </section>
+
+        <section>
+            <h1 id="portfolio">Portfolio</h1>
+            <article>
+                <h2 id="project1">Project 1</h2>
+            </article>
+            <article>
+                <h2 id="project2">Project 2</h2>
+            </article>
+            <article>
+                <h2 id="project3">Project 3</h2>
+            </article>
+        </section>
+
+        <section>
+            <h1 id="resume">Resume</h1>
+        </section>
+
+        <section>
+            <h1 id="Contact">Contact</h1>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
