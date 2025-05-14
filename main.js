@@ -4,6 +4,7 @@
 // Changing Active Link
 
 const navLink = document.querySelectorAll('.nav-link');
+
 function linkAction() {
     navLink.forEach(n => n.classList.remove('active'));
     this.classList.add('active');

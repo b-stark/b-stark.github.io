@@ -263,3 +263,11 @@ section ul {
 .spaceup {
     margin-top: 20px;
 }
+
+.text-box p:first-child {
+    margin-top: 0;
+}
+
+.text-box {
+    text-align: justify;
+}
