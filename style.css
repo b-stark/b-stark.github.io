@@ -2,7 +2,8 @@
  https://codepen.io/leonam-silva-de-souza/pen/vEYYxGP */
 
 :root {
-    --main: #FFFBDE;
+    --main1: #FFFBDE;
+    --main2: #d8d5b2;
     --acc1: #90D1CA;
     --acc2: #129990;
     --acc3: #096B68;
@@ -17,9 +18,12 @@ body {
     font-weight: 500;
 }
 
-ul {
+.nav-menu>ul {
     margin: 0;
     padding: 0;
+}
+
+ul {
     list-style: none;
 }
 
@@ -149,7 +153,7 @@ a {
 
 .active {
     color: var(--acc3);
-    text-decoration-line: underline;
+    font-weight: 600;
 }
 
 #content {
@@ -158,11 +162,104 @@ a {
 
 section {
     min-height: 500px;
-    border: 1px solid red;
+    padding-left: 2rem;
 }
 
 h1,
 h2 {
-    padding-top: 3.5rem;
     font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    padding-top: 6rem;
+    font-size: 40pt;
+    color: var(--acc3);
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--acc2);
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.twocol {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ab-left {
+    width: 45%;
+}
+
+#ab-right {
+    width: 50%;
+}
+
+.img-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-box img {
+    max-height: 300px;
+    margin: 16px;
+    margin-top: 0px;
+    box-shadow: 5px 5px var(--acc1);
+}
+
+section ul {
+    list-style: disc;
+}
+
+.school {
+    margin-bottom: 20px;
+}
+
+.school span {
+    display: block;
+    color: grey;
+    font-style: italic;
+}
+
+#re-left {
+    width: 35%;
+}
+
+#re-right {
+    width: 60%;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sk-col {
+    margin-right: 20px;
+    width: 30%;
+}
+
+.sk-col span {
+    text-decoration: underline;
+}
+
+.sk-col ul,
+.job ul {
+    padding-left: 14px;
+    margin-top: 8px;
+}
+
+.sk-col li,
+.job li {
+    margin-bottom: 8px;
+    padding-lefT: 4px;
+}
+
+.spaceup {
+    margin-top: 20px;
 }

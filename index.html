@@ -23,7 +23,7 @@
             <div class="nav-content bd-grid">
                 <a href="#about" class="nav-perfil">
                     <div class="nav-img">
-                        <img src="headshot.jpg" alt="" height="">
+                        <img src="img/headshot.jpg" alt="" height="">
                     </div>
                     <div>
                         <span class="nav-name">Ben</span>
@@ -37,7 +37,7 @@
                             <a href="#portfolio" class="nav-link dropdown-link">Porfolio
                                 <i class="bx bx-chevron-down dropdown-icon"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a href="#project1" class="nav-link">Project 1</a></li>
+                                <li class="dropdown-item"><a href="#portfolio" class="nav-link">Project 1</a></li>
                                 <li class="dropdown-item"><a href="#project2" class="nav-link">Project 2</a></li>
                                 <li class="dropdown-item"><a href="#project3" class="nav-link">Project 3</a></li>
                             </ul>
@@ -52,34 +52,203 @@
     <div id="content">
         <section>
             <h1 id="about">About</h1>
-            <img src="about/img1.jpg" alt="Man standing in forest hjolding binoculars and a book" height=500px>
-            <img src="about/img2.jpg" alt="Group selfie on the side of the road infront of cut phragmites" height=500px>
-            <img src="about/img3.JPG" alt="Group photo in around a trail cam in South Africa" height=500px>
-            <img src="about/img4.JPG" alt="Selfie infront of a white backgroun, passport style" height=500px>
-            <div>
-                Testing out text to see whether this font looks OK.
+            <div class="twocol">
+                <div id="ab-left">
+                    <div class="text-box">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                </div>
+                <div id="ab-right">
+                    <div class="img-box">
+                        <img src="img/about1.jpg" alt="Group selfie on the side of the road infront of cut phragmites"
+                            height=500px>
+                        <img src="img/about2.jpg" alt="Group photo in around a trail cam in South Africa">
+                        <img src="img/about3.jpg" alt="Man standing in forest hjolding binoculars and a book">
+                    </div>
+                </div>
             </div>
         </section>
 
         <section>
             <h1 id="portfolio">Portfolio</h1>
-            <article>
-                <h2 id="project1">Project 1</h2>
-            </article>
-            <article>
-                <h2 id="project2">Project 2</h2>
-            </article>
-            <article>
-                <h2 id="project3">Project 3</h2>
-            </article>
+            <h2 id="project1">Project 1</h2>
+            <h2 id="project2">Project 2</h2>
+            <h2 id="project3">Project 3</h2>
         </section>
 
         <section>
             <h1 id="resume">Resume</h1>
+            <div class="twocol">
+                <div id="re-left">
+                    <h2>Education</h2>
+                    <h3>Centre of Geographic Sciences, Lawrencetown, Nova Scotia</h3>
+                    <div class="school">
+                        Geospatial Data Analytics, 2025
+                        <span>(Graduate Certificate)</span>
+                    </div>
+                    <h3>Fleming College School of Environmental & Natural Resources Sciences, Lindsay, Ontario</h3>
+                    <div class="school">
+                        Ecosystem Management Technician, 2023
+                        <span>(Diploma)</span>
+                    </div>
+                    <h3>Centennial College, Toronto, Ontario</h3>
+                    <div class="school">
+                        Advertising Media Management, 2013
+                        <span>(Graduate Certificate)</span>
+                    </div>
+                    <h3>Carleton University, Ottawa, Ontario</h3>
+                    <div class="school">
+                        Bachelor of Arts (Hons.), Philosophy, 2011
+                        <span>(Degree)</span>
+                    </div>
+                </div>
+                <div id="re-right">
+                    <h2>Skills</h2>
+                    <div id="skills">
+                        <div class="sk-col">
+                            <h3>Subject Expertise</h3>
+                            <ul>
+                                <li>Data Modellng & ETL Pipelines</li>
+                                <li>Geographic Information Systems (GIS)</li>
+                                <li>Remote Sensing & Multispectral Imagery</li>
+                                <li>Spatial Database Management</li>
+                                <li>Ecological Land Classification (ELC)</li>
+                                <li>Ecological Restoration</li>
+                                <li>Marketing Analytics</li>
+                                <li>Financial Modelling</li>
+                                <li>Media Planning</li>
+                            </ul>
+                        </div>
+                        <div class="sk-col">
+                            <h3>Software Proficiencies</h3>
+                            <ul>
+                                <li>ArcGIS Pro & ArcGIS Online</li>
+                                <li>ArcGIS Insights</li>
+                                <li>QGIS</li>
+                                <li>Orange Data Mining</li>
+                                <li>SharePoint Developer</li>
+                                <li>Power Apps & Power Automate</li>
+                                <li>GitHub Desktop</li>
+                                <li>pgAdmin</li>
+                            </ul>
+                        </div>
+                        <div class="sk-col">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>R</li>
+                                <li>Python</li>
+                                <li>Javascript</li>
+                                <li>Lua</li>
+                                <li>VBA</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="spaceup">Experience</h2>
+            <div id="job-wrap">
+                <div class="job">
+                    <h3>Land Research Coordinator</h3>
+                    <div>
+                        Kawartha Land Trust, Peterborough, Ontario <i>(Current)</i>
+                        <ul>
+                            <li>Perform spatial analysis to support conservation land prioritization and securement</li>
+                            <li>Produce maps, reports, and supporting documents for property owners and managers using
+                                ArcGIS and Microsoft Publisher</li>
+                            <li>Support teams of volunteers who collect ecological data using ArcGIS FieldMaps</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <h3>Wetland Restoration Technician</h3>
+                    <div class="school">
+                        Kawartha Land Trust, Peterborough, Ontario <i>(2024)</i>
+                        <ul>
+                            <li>Controlled invasive vegetation; monitored wetlands for invasive and environmentally
+                                significant species; implemented erosion control measures in protected riparian areas
+                            </li>
+                            <li>Measured and reported on grant deliverables, developed management recommendations for
+                                phragmites and starry-stonewort following best management practices for Ontario and the
+                                Great Lakes region</li>
+                            <li>Recorded and managed GIS data using Field Maps and ArcGIS Online</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <h3>Route Manager</h3>
+                    <div class="school">
+                        Abell Pest Control, Barrie, Ontario <i>(2023-2024)</i>
+                        <ul>
+                            <li>Provided residential, commercial and industrial pest control services as well as
+                                customer service and support, consistently surpassed monthly sales targets and received
+                                high NPS ratings</li>
+                            <li>Expanded commercial pest control route to include 100+ businesses with recurring
+                                services, that included food distributors, processing plants, hotels, schools and a
+                                regional hospital</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <h3>Manager, Data Centre of Excellence</h3>
+                    <div class="school">
+                        Rogers Communications Inc., Toronto, Ontario <i>(2017-2021)</i>
+                        <ul>
+                            <li>Planned and executed a three-year ”marketing transformation” program that introduced
+                                agile workflows to employees in marketing, IT, data engineering and customer analytics
+                            </li>
+                            <li>Developed custom project management web applications to direct project requests,
+                                update work items, manage monthly priorities across teams, and initiate work on CRM
+                                (email & SMS) campaigns</li>
+                            <li>Created and maintained financial forecasts used to secure funds from the executive
+                                Steering Committee</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <h3>Media Planning Specialist</h3>
+                    <div class="school">
+                        Rogers Communications Inc., Toronto, Ontario <i>(2015-2017</i>)
+                        <ul>
+                            <li>Planned, organized, and executed in-house advertising campaigns for Rogers Media,
+                                Wireless, Cable businesses using promotional and “in-kind” media inventory (TV, radio,
+                                print, digital ad space)</li>
+                            <li>Collaborated with external agencies and corporate partners to implement unique
+                                cross-platform campaigns</li>
+                            <li>Developed and implemented processes to evaluate audience and relative media dollar value
+                                impacts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <h3>Broadcast Buyer</h3>
+                    <div class="school">
+                        OMD Canada, Toronto, Ontario <i>(2013-2015)</i>
+                        <ul>
+                            <li>Planned and purchased broadcast media to achieve marketing objectives for national
+                                advertising clients</li>
+                            <li>Developed in-house software utilities to improve operational efficiency</li>
+                            <li>Supervised direct-response TV campaigns and created client dashboards to visualize
+                                campaign returns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
             <h1 id="contact">Contact</h1>
+            <h3>Email</h3>
+            <a href="mailto:ben_stark@hotmail.com">ben_stark@hotmail.com</a>
+            <h3 class="spaceup">Github</h3>
+            <a href="https://github.com/b-stark">https://github.com/b-stark</a>
+            <h3 class="spaceup">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/brstark/">https://www.linkedin.com/in/brstark/</a>
         </section>
     </div>
 
