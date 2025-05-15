@@ -7,6 +7,7 @@
     --acc1: #90D1CA;
     --acc2: #129990;
     --acc3: #096B68;
+    --cap: #5a5a5a;
 }
 
 body {
@@ -264,10 +265,71 @@ section ul {
     margin-top: 20px;
 }
 
+.spaceup-big {
+    padding-top: 96px;
+}
+
 .text-box p:first-child {
     margin-top: 0;
 }
 
 .text-box {
     text-align: justify;
+}
+
+.proj {
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ptext {
+    padding: 0 100px;
+}
+
+.p-img-box {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.caption {
+    font-style: italic;
+    color: var(--cap);
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.quad {
+    display: grid;
+    gap: 20px;
+}
+
+.quad {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quad>img {
+    width: 400px;
+    aspect-ratio: 1;
+    object-fit: scale-down;
+}
+
+.proj img {
+    border: 1px solid black;
+    box-shadow: 5px 5px var(--acc1);
+}
+
+.p1-left {
+    width: 35%;
+}
+
+.p1-right {
+    width: 60%;
 }

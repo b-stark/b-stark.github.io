@@ -37,9 +37,14 @@
                             <a href="#portfolio" class="nav-link dropdown-link">Porfolio
                                 <i class="bx bx-chevron-down dropdown-icon"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a href="#portfolio" class="nav-link">Project 1</a></li>
-                                <li class="dropdown-item"><a href="#project2" class="nav-link">Project 2</a></li>
-                                <li class="dropdown-item"><a href="#project3" class="nav-link">Project 3</a></li>
+                                <li class="dropdown-item"><a href="#portfolio" class="nav-link">Data Exploration in
+                                        R</a></li>
+                                <li class="dropdown-item"><a href="#project2" class="nav-link">Suitability Analysis in
+                                        ArcGIS</a></li>
+                                <li class="dropdown-item"><a href="#project3" class="nav-link">Satellite Image
+                                        Processing in Python</a></li>
+                                <li class="dropdown-item"><a href="#project4" class="nav-link">Aerial Photo
+                                        Classification in Python</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#resume" class="nav-link ">Resume</a></li>
@@ -55,9 +60,9 @@
             <div class="twocol">
                 <div id="ab-left">
                     <div class="text-box">
-                        <p> Hi there! I'm Ben, a graduate from the Geospatial Data Analytics program at the Centre of
-                            Geographic Sciences in Lawrencetown, Nova Scotia. This is a portfolio page I have setup
-                            through GitHub Pages, wherein I will showcase some of the skills I developed over the
+                        <p> Hi there! I'm Ben, a graduate from the Geospatial Data Analytics (GDA) program at the Centre
+                            of Geographic Sciences (COGS) in Lawrencetown, Nova Scotia. This is a portfolio page I have
+                            setup through GitHub Pages, wherein I will showcase some of the skills I developed over the
                             past school term.
                         </p>
                         <p> I began my career a while ago in advertising and media planning. The first code I ever wrote
@@ -69,22 +74,20 @@
                         <p>My experience at COGS was the first actual schooling I ever received in programming, and I
                             was very happy with the experience. The thing I valued the most was that my instructors took
                             care to contextualize new concepts and tools rather than just show us how to use them. For
-                            example, were were introduced to the Open Geospatial Constortium whose standards enable some
-                            of the most commonly spatial data formats like KMLs, GeoTiffs, and Geopackages. I was also
-                            happy to learn about things like style guidelines and how to implement test cases -- skills
-                            that are essential to code well with others, which is something I had never really needed to
-                            do
-                            before.
+                            example, were were introduced to the Open Geospatial Constortium whose standards have been
+                            used to implement many of the
+                            most common spatial data formats like KMLs, GeoTiffs, and Geopackages. We also learned about
+                            things like style guidelines and how to implement test cases -- skills
+                            that are essential to code well with others, which I may never have developed on my own.
                         </p>
 
-                        <p>Of course I learned more at COGS than just how to use Python. Earlier classes in geodesy,
-                            remote
-                            sensing, database management and the use of GIS software provided foundational knowledge
-                            that...
-                            Spatial analysis, modelling, machine learning & neural networks.
-                            .</p>
-
-                        <p>How it fits career goals, new job, climate change, etc. </p>
+                        <p>In the GDA program we were also encouraged to adapt our projects towards topics that
+                            interested us. As someone trying to transition my career towards environmental conservation
+                            and ecological restoration, this gave me the opportunity to work with data sources used by
+                            professionals in these fields. Being able to speak about relevant work I did as a student
+                            helped me to secure my first emplopyment contract in land research, which I would have been
+                            able to do without my time at COGS.
+                        </p>
 
                     </div>
                 </div>
@@ -101,9 +104,77 @@
 
         <section>
             <h1 id="portfolio">Portfolio</h1>
-            <h2 id="project1">Project 1</h2>
-            <h2 id="project2">Project 2</h2>
-            <h2 id="project3">Project 3</h2>
+            <div class="proj">
+                <h2 id="project1">Data Processing & Exploratory Analysis in R</h2>
+                <h3>Western Monarch Populations & California Wildfires</h3>
+                <div class="ptext">
+                    <p>In this project I wanted to explore <a href="https://westernmonarchcount.org/data/"
+                            target="_blank">citizen science data from the Western Monarch Count</a>, a long-running
+                        program where
+                        volunteers collect observations of overwintering Monarch Butterflies in southern
+                        California. I was interested to see whether there was any relationship between monarch
+                        butterfly populations and incidents of wildfires in their winter habitat over time.
+                    </p>
+                    <p>
+                        I used R to compile data on monarch counts, observation sites, as well as <a
+                            href="https://www.fire.ca.gov/what-we-do/fire-resource-assessment-program/gis-mapping-and-data-analytics">fire
+                            records from the California Department of Forestry and Fire</a>. I used a spatial join
+                        to connect the fire records and monarch counts by county, then used the ggplot2 package to
+                        explore the variables and
+                        look for patterns.
+                    </p>
+                </div>
+                <span class="caption">Data model and several visualizations of variable distributions and
+                    relationships
+                    generated in R</span>
+                <div class="quad">
+                    <img src="img/p1-datamodel.png" alt="Data model for project 1">
+                    <img src="img/p1-allvars.png" alt="Variable distributions">
+                    <img src="img/p1-monarchHM.png" alt="Heatmap chart of monarch counts">
+                    <img src="img/p1-firegroups.png" alt="Distribution of fire incidents by county over time">
+                </div>
+            </div>
+
+            <div class="proj">
+                <h2 id="project2" class="spaceup-big">Suitabilty Analyis Using ArcGIS Pro's Model Builder and
+                    Suitability
+                    Workflow</h2>
+                <h3>Sustainable Forestry Operations in Saskatchewan</h3>
+            </div>
+
+            <div class="proj">
+                <h2 id="project3" class="spaceup-big">Acquiring and Processing Satellite Image Data from the Microsoft
+                    Planetary Computer Using Python</h2>
+                <h3>Wildife Burn Severity Analysis in Nova Scotia</h3>
+            </div>
+
+            <div class="proj">
+                <h2 id="project4" class="spaceup-big">Using Machine Learning to Classify Land Cover Features in Aerial
+                    Photographs</h2>
+                <h3>Land Classification in Central Ontario</h3>
+                <div class="ptext">
+                    <p>This was a major term project in which I created a land cover classification dataset
+                        for Central Ontario. I used images from the <a
+                            href="https://geohub.lio.gov.on.ca/maps/5ce3ba3176564c46969f064453742f1a/about">South
+                            Central Ontario Orthophotography Project</a>, used ArcGIS Pro to manually label several
+                        thousand pixels, then loaded everything into Python to train and test different classification
+                        models for prediction accuracy. The best performing method used a Random Forest ensemble
+                        classifier, which I used to classify the aerial images in bulk. Finally, these images were
+                        joined together and class labels were added in ArcGIS Pro.
+                    </p>
+                    <p>
+                        This model did a 'fair' job overall, but still needs to be improved before it can be used to
+                        produce a reliable land cover dataset.
+                    </p>
+                </div>
+                <span class="caption">Examples of classified image tiles produced by the Random Forest model</span>
+                <div class="quad">
+                    <img src="img/p4-class1.png" alt="Land classification image">
+                    <img src="img/p4-class2.png" alt="Land classification image">
+                    <img src="img/p4-class3.png" alt="Land classification image">
+                    <img src="img/p4-class4.png" alt="Land classification image">
+                </div>
+            </div>
         </section>
 
         <section>
