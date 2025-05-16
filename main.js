@@ -1,8 +1,3 @@
-/* Adapted from codepen user Leonam Silva de Souza:
- https://codepen.io/leonam-silva-de-souza/pen/vEYYxGP */
-
-// Changing Active Link
-
 const navLink = document.querySelectorAll('.nav-link');
 
 function linkAction() {

@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!-- Adapted from codepen user Leonam Silva de Souza:
- https://codepen.io/leonam-silva-de-souza/pen/vEYYxGP -->
-
 <html lang="en">
 
 <head>
@@ -19,6 +16,7 @@
 
 <body>
     <header class="header">
+        <!-- Navbar design was adapted from codepen user Leonam Silva de Souza: https://codepen.io/leonam-silva-de-souza/pen/vEYYxGP -->
         <nav class="nav" id="nav-menu">
             <div class="nav-content bd-grid">
                 <a href="#about" class="nav-perfil">
@@ -39,10 +37,10 @@
                             <ul class="dropdown-menu">
                                 <li class="dropdown-item"><a href="#portfolio" class="nav-link">Data Exploration in
                                         R</a></li>
-                                <li class="dropdown-item"><a href="#project2" class="nav-link">Suitability Analysis in
+                                <li class="dropdown-item"><a href="#project2" class="nav-link">Suitability Modelling in
                                         ArcGIS</a></li>
-                                <li class="dropdown-item"><a href="#project3" class="nav-link">Satellite Image
-                                        Processing in Python</a></li>
+                                <li class="dropdown-item"><a href="#project3" class="nav-link">Remote Sensing Image
+                                        Analysis in Python</a></li>
                                 <li class="dropdown-item"><a href="#project4" class="nav-link">Aerial Photo
                                         Classification in Python</a></li>
                             </ul>
@@ -74,7 +72,7 @@
                         <p>My experience at COGS was the first actual schooling I ever received in programming, and I
                             was very happy with the experience. The thing I valued the most was that my instructors took
                             care to contextualize new concepts and tools rather than just show us how to use them. For
-                            example, were were introduced to the Open Geospatial Constortium whose standards have been
+                            example, were introduced to the Open Geospatial Consortium whose standards have been
                             used to implement many of the
                             most common spatial data formats like KMLs, GeoTiffs, and Geopackages. We also learned about
                             things like style guidelines and how to implement test cases -- skills
@@ -85,7 +83,7 @@
                             interested us. As someone trying to transition my career towards environmental conservation
                             and ecological restoration, this gave me the opportunity to work with data sources used by
                             professionals in these fields. Being able to speak about relevant work I did as a student
-                            helped me to secure my first emplopyment contract in land research, which I would have been
+                            helped me to secure my first employment contract in land research, which I would have been
                             able to do without my time at COGS.
                         </p>
 
@@ -108,20 +106,20 @@
                 <h2 id="project1">Data Processing & Exploratory Analysis in R</h2>
                 <h3>Western Monarch Populations & California Wildfires</h3>
                 <div class="ptext">
-                    <p>In this project I wanted to explore <a href="https://westernmonarchcount.org/data/"
+                    <p>
+                        In this project I wanted to explore <a href="https://westernmonarchcount.org/data/"
                             target="_blank">citizen science data from the Western Monarch Count</a>, a long-running
-                        program where
-                        volunteers collect observations of overwintering Monarch Butterflies in southern
+                        program where volunteers collect observations of overwintering Monarch Butterflies in southern
                         California. I was interested to see whether there was any relationship between monarch
                         butterfly populations and incidents of wildfires in their winter habitat over time.
                     </p>
                     <p>
                         I used R to compile data on monarch counts, observation sites, as well as <a
-                            href="https://www.fire.ca.gov/what-we-do/fire-resource-assessment-program/gis-mapping-and-data-analytics">fire
-                            records from the California Department of Forestry and Fire</a>. I used a spatial join
-                        to connect the fire records and monarch counts by county, then used the ggplot2 package to
-                        explore the variables and
-                        look for patterns.
+                            href="https://www.fire.ca.gov/what-we-do/fire-resource-assessment-program/gis-mapping-and-data-analytics"
+                            target="_blank">fire records from the California Department of Forestry and Fire</a>. I
+                        spatially
+                        joined the fire records and monarch counts to California County boundaries, then used the
+                        ggplot2 package to explore variable distributions and look for patterns.
                     </p>
                 </div>
                 <span class="caption">Data model and several visualizations of variable distributions and
@@ -140,12 +138,66 @@
                     Suitability
                     Workflow</h2>
                 <h3>Sustainable Forestry Operations in Saskatchewan</h3>
+                <div class="ptext">
+                    <p>
+                        With a small team, I developed a location suitability model for new forestry operations in
+                        Saskatchewan. We used publicly available data to create sub-models for individual criteria
+                        like proximity to infrastructure and the presence of environmentally protected areas. The output
+                        of these models were scaled, combined, and weighted to produce an overall suitability raster
+                        that
+                        we used to make specific location recommendations.
+                        We used ArcGIS Pro's Model Builder tool, as well as the Suitability workflow from its Spatial
+                        Analyst extension to execute these steps.
+                    </p>
+                    <p>
+                        As part of this project I created a slope model of our study area by aggregating 48 smaller
+                        DEM tiles from the <a
+                            href="https://open.canada.ca/data/en/dataset/7f245e4d-76c2-4caa-951a-45d1d2051333/resource/9f07b66c-bf1d-4a20-b41a-d20074818acd"
+                            target="_blank">Canadian Digital Elevation Model</a>. I also used tree species coverage and
+                        above-ground biomass
+                        values from <a
+                            href="https://open.canada.ca/data/en/dataset/18e6a919-53fd-41ce-b4e2-44a9707c52dc"
+                            target="_blank">SCANFI</a>
+                        to derive merchantable wood volume estimates using a <a
+                            href="https://nfi.nfis.org/StandBiomassCalculator/index.jsp?lang=en"
+                            target="_blank">conversion tool from Canada's National Forest Inventory</a>.
+                    </p>
+                </div>
+                <span class="caption">A sub-model in Model Builder, the resulting criteria layer, final site
+                    recommendations, and a project poster</span>
+                <div class="quad">
+                    <img src="img/p2-modelbuilder.png" alt="Data model for project 1">
+                    <img src="img/p2-timber.png" alt="Variable distributions">
+                    <img src="img/p2-sites.png" alt="Region selection from suitability model">
+                    <img src="img/p2-poster.png" alt="Heatmap chart of monarch counts">
+                </div>
             </div>
 
             <div class="proj">
                 <h2 id="project3" class="spaceup-big">Acquiring and Processing Satellite Image Data from the Microsoft
                     Planetary Computer Using Python</h2>
-                <h3>Wildife Burn Severity Analysis in Nova Scotia</h3>
+                <h3>Wildfire Burn Severity Analysis in Nova Scotia</h3>
+                <div class="ptext">
+                    <p>
+                        In this project I followed a <a href=""
+                            https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio"
+                            target="_blank">protocol to calculate wildfire intensity using remote sensing</a> to assess
+                        the severity of the 2023 wildfire in Shelburne County, Nova Scotia. Using Python, I accessed
+                        Sentinel-2 imagery via the Microsoft Planetary Computer STAC catalog, obtained NIR and SWIR2
+                        reflectance values from before and after the fire, and used these to calculate normalized burn
+                        index values at a 10-metre resolution across the burned area. My script also produced several
+                        charts and a raster file that
+                        were used to analyze the fire's overall severity and visualize its impact using QGIS.
+                    </p>
+                </div>
+                <span class="caption">A section of the script, two charts showing pixel value distributions, and a burn
+                    severity map</span>
+                <div class="quad">
+                    <img src="img/p3-python.png" alt="Python code snippet">
+                    <img src="img/p3-hist1.png" alt="Histogram of all dNBR values">
+                    <img src="img/p3-barplot.png" alt="Pixel counts in different burn severity categories">
+                    <img src="img/p3-analysis.png" alt="Visualization of burn severity using QGIS">
+                </div>
             </div>
 
             <div class="proj">
@@ -155,7 +207,8 @@
                 <div class="ptext">
                     <p>This was a major term project in which I created a land cover classification dataset
                         for Central Ontario. I used images from the <a
-                            href="https://geohub.lio.gov.on.ca/maps/5ce3ba3176564c46969f064453742f1a/about">South
+                            href="https://geohub.lio.gov.on.ca/maps/5ce3ba3176564c46969f064453742f1a/about"
+                            target="_blank">South
                             Central Ontario Orthophotography Project</a>, used ArcGIS Pro to manually label several
                         thousand pixels, then loaded everything into Python to train and test different classification
                         models for prediction accuracy. The best performing method used a Random Forest ensemble
@@ -178,7 +231,7 @@
         </section>
 
         <section>
-            <h1 id="resume">Resume</h1>
+            <h1 id="resume">Resumé</h1>
             <div class="twocol">
                 <div id="re-left">
                     <h2>Education</h2>
@@ -209,7 +262,7 @@
                         <div class="sk-col">
                             <h3>Subject Expertise</h3>
                             <ul>
-                                <li>Data Modellng & ETL Pipelines</li>
+                                <li>Data Modelling & ETL Pipelines</li>
                                 <li>Geographic Information Systems (GIS)</li>
                                 <li>Remote Sensing & Multispectral Imagery</li>
                                 <li>Spatial Database Management</li>

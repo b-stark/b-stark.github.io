@@ -1,6 +1,3 @@
-/* Adapted from codepen user Leonam Silva de Souza:
- https://codepen.io/leonam-silva-de-souza/pen/vEYYxGP */
-
 :root {
     --main1: #FFFBDE;
     --main2: #d8d5b2;
@@ -8,6 +5,10 @@
     --acc2: #129990;
     --acc3: #096B68;
     --cap: #5a5a5a;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
